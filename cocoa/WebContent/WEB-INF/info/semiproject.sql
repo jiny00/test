@@ -58,5 +58,4 @@ from member_c m, poke_c p
 where m.id = p.re_Id; 
 
 drop sequence poke_seq; 
-
 create sequence poke_seq; 
