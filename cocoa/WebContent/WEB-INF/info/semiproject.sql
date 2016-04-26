@@ -1,5 +1,5 @@
 drop table member_c;
-
+  
 create table member_c(
 	id varchar2(10) primary key,
 	password varchar2(10) not null,
