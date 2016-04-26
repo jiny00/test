@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#iu").click(function(){
+			alert($(this).text());
+		});
+		// class를 이용해 select
+		// .class
+		$(".cssClassTest").click(function(){
+			$(this).css("background","yellow");
+		});
+	});
+</script>
+</head>
+<body>
+<p id = "iu">아이유 어디에?</p>
+<p>여기는 일반 p 태그 영역</p>
+<div class = "cssClassTest">임흥택</div>
+<br><br>
+<span class = "cssClassTest">설현</span>
+</body>
+</html>
