@@ -86,7 +86,7 @@
 </head>
 <body>
 <form action="DispatcherServlet" method="post" name = "registForm" onsubmit="return register()">
-<table border="1"cellpadding="5">
+<table border="5"cellpadding="5">
    <tr>
       <td bgcolor="yellow"  colspan="2" align="center"><h2>회원 가입</h2></td>
    </tr>

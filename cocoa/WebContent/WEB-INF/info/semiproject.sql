@@ -23,7 +23,7 @@ drop table board_c;
 
 create table board_c(
 	post_no number primary key, 
-	title varchar(100) not null, 
+	title varchar2(100) not null, 
 	content clob not null, 
 	time_posted date not null,
 	id not null, 
@@ -37,9 +37,9 @@ drop table poke_c;
 
 create table poke_c(
 	poke_no number primary key,
-	se_Id varchar(10) not null,
-	re_Id varchar(10) not null, 
-	confirm varchar(1) not null, 
+	se_Id varchar2(10) not null,
+	re_Id varchar2(10) not null, 
+	confirm varchar2(1) not null, 
 	constraint fk_seId foreign key(se_Id) references member_c(id),
 	constraint fk_reId foreign key(re_Id) references member_c(id)
 )
@@ -60,3 +60,4 @@ where m.id = p.re_Id;
    
 drop sequence poke_seq; 
 create sequence poke_seq; 
+병우
